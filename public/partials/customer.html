@@ -1,0 +1,63 @@
+<div class="center-block">
+    <h1><span class="glyphicon glyphicon-user"></span>Customers</h1>
+    <div>
+        <a href="#/customers/cardView">
+            <button type="button" class="btn btn-default white-btn" id="cardViewTab" ng-click="cardView()"><span class="glyphicon glyphicon-th-large"></span>Card View</button>
+        </a>
+        <a href="#/customers/listView" ng-click="listView()">
+            <button type="button" class="btn btn-default white-btn" id="listViewTab"><span class="glyphicon glyphicon-list"></span>List View</button>
+        </a>
+        <a href="#/customers/addCustomer">
+            <button type="button" class="btn btn-default white-btn"><span class="glyphicon glyphicon-plus"></span>Add Customer</button>
+        </a>
+        <div class="input filter-search">Filter:
+            <input type="text" class="form-control filter" placeholder="Name And Address" ng-model="search" ng-change="searching()">
+        </div>
+    </div>
+</div>
+<!-- CARD VIEW -->
+<div class="customer-cardview" ng-show="cardDisplay">
+    <div class="customer-box" dir-paginate="x in customers |filter:search | itemsPerPage:contentsPerPage">
+        <div class="customer-box-header">
+            <button type="button" class="btn" ng-bind="x.firstName +' '+x.lastName" ng-click="editCustomer(x)"></button>
+            <p id="remove-glyph" ng-click="deleteCustomer(x)"> <span class="glyphicon glyphicon-remove"></span></p>
+        </div>
+        <div class="customer-box-body">
+            <img ng-src={{x.pic}} alt="{{x.gender}}">
+            <div>
+                <p ng-bind="x.city +', '+x.state"></p>
+                <a href="#/customers/details"><p class="order-color" ng-bind="x.order+' : order'" ng-click="customerOrder(x)"></p></a>
+            </div>
+        </div>
+    </div>
+    <div>
+        <dir-pagination-controls max-size="2" direction-links="true" boundary-links="true" template-url="partials/dirPagination.tpl.html">
+
+        </dir-pagination-controls>
+    </div>
+</div>
+<!-- LIST VIEW -->
+<div ng-show="listDisplay">
+    <table class="table">
+        <thead class="list-titlebar">
+            <tr>
+                <th>&nbsp;</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Username</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="x in customers |filter:search">
+                <td ><img ng-src={{x.pic}} alt="{{x.gender}}"></td>
+                <td ng-bind="x.firstName +' '+x.lastName"></td>
+                <td ng-bind="x.city +', '+x.state"></td>
+                <td ><a href="#/customers/details" ng-bind="x.order+' : order'" ng-click="customerOrder(x)"></a></td>
+                <td>
+                    <button type="button" class="btn btn-danger" ng-click="deleteCustomer(x)">Delete</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

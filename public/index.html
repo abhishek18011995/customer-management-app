@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+
+<head>
+    <title>Cat Portal : Cognizant</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="js/jquery-3.0.0.min.js"></script>
+    <script src="js/angular.min.js"></script>
+    <script src="js/ngStorage.min.js"></script>
+    <script src="js/angular-route.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="js/app.js"></script>
+    <script src="js/dirPagination.js"></script>
+    <script src="controller/loginCtrl.js"></script>
+    <script src="controller/customerCtrl.js"></script>
+    <script src="controller/listCtrl.js"></script>
+    <script src="controller/add-customer-ctrl.js"></script>
+    <script src="controller/edit-customer-ctrl.js"></script>
+    <script src="controller/customer-orders-ctrl.js"></script>
+    <script src="controller/orders-ctrl.js"></script>
+</head>
+
+<body ng-controller="mainCtrl">
+    <div class="container-fluid">
+        <nav class="navbar navbar-default">
+            <div class="pic"><img src="images/pic.png"></div>
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <!-- <a class="navbar-brand" href="#/customers/cardView">Customer Management</a> -->
+                <p >Customer Management</p>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <button type="button" class="btn btn-default navbar-btn" ng-click="customerPage()">Customers</button>
+                <button type="button" class="btn btn-default navbar-btn" ng-click="ordersPage()">Orders</button>
+                <button type="button" class="btn btn-default navbar-btn">About</button>
+                <button type="button" class="btn btn-default navbar-btn" ng-hide="logout">Login</button>
+                <button type="button" class="btn btn-default navbar-btn" ng-show="logout" ng-click="logoutUser()">Logout</button>
+            </div>
+            <!-- /.navbar-collapse -->
+        </nav>
+        <div ng-view></div>
+    </div>
+    <!-- /.container-fluid -->
+</body>
+
+</html>

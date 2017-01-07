@@ -1,0 +1,144 @@
+[{
+    "email":"abhi@gmail.com",
+	"customerDetails":[{
+		"firstName": "Ward",
+		"lastName": "Bell",
+		"gender": "male",
+		"email": "Ward@gmail.com",
+		"address": "12-B",
+		"city": "Dallas",
+		"state": "Texas",
+		"orders": 0,
+		"pic": "images/male.png",
+		"zip": 123456,
+		"productDetails": [{
+			"product": "-",
+			"date": "-",
+			"quantity": "-",
+			"price": "-",
+			"total": "-"
+		}]
+	}, {
+		"firstName": "Robin",
+		"lastName": "Cleark",
+		"gender": "female",
+		"email": "Robin@gmail.com",
+		"address": "14-C",
+		"city": "LosAngeles",
+		"state": "California",
+		"orders": 5,
+		"pic": "images/female.png",
+		"zip": 345678,
+		"productDetails": [{
+				"product": "basket",
+				"Date": "05/02/2016",
+				"Quantity": "1",
+				"price": "$29.9",
+				"Total": "$29.9"
+			}, {
+				"product": "legocity",
+				"Date": "23/02/2014",
+				"Quantity": "2",
+				"price": "$29.9",
+				"Total": "$29.9"
+			}, {
+				"product": "Controller",
+				"Date": "09/1/2014",
+				"Quantity": "3",
+				"price": "$49.9",
+				"Total": "$149.7"
+			}, {
+				"product": "basket",
+				"Date": "17/11/2014",
+				"Quantity": "1",
+				"price": "$59.9",
+				"Total": "$59.9"
+			}, {
+				"product": "basket",
+				"Date": "23/02/2014",
+				"Quantity": "1",
+				"price": "$0.9",
+				"Total": "$0.9"
+			}
+
+		]
+	},{
+		"firstName": "Misko",
+		"lastName": "Hevery",
+		"gender": "male",
+		"email": "Misko@gmail.com",
+		"address": "15/A/1",
+		"city": "Anaheim",
+		"state": "California",
+		"orders": 1,
+		"pic": "images/male.png",
+		"zip": 567567,
+		"productDetails": [{
+			"product": "Bat",
+			"Date": "05/11/2015",
+			"Quantity": "1",
+			"price": "$59.9",
+			"Total": "$59.9"
+		}]
+	}, {
+		
+		"firstName": "Marcus",
+		"lastName": " HighTower",
+		"gender": "male",
+		"email": "Marcus@gmail.com",
+		"address": "12-B",
+		"city": "Phoenix",
+		"state": "Arizona",
+		"orders": 1,
+		"pic": "images/male.png",
+		"zip": 345432,
+		"productDetails": [{
+			"product": "lock",
+			"Date": "24/10/2015",
+			"Quantity": "4",
+			"price": "$20",
+			"Total": "$80"
+		}]
+}]
+},
+{
+    "email":"e@gmail.com",
+	"customerDetails":[{
+		"firstName": "Misko",
+		"lastName": "Hevery",
+		"gender": "male",
+		"email": "Misko@gmail.com",
+		"address": "15/A/1",
+		"city": "Anaheim",
+		"state": "California",
+		"orders": 1,
+		"pic": "images/male.png",
+		"zip": 567567,
+		"productDetails": [{
+			"product": "Bat",
+			"Date": "05/11/2015",
+			"Quantity": "1",
+			"price": "$59.9",
+			"Total": "$59.9"
+		}]
+	}, {
+		
+		"firstName": "Marcus",
+		"lastName": " HighTower",
+		"gender": "male",
+		"email": "Marcus@gmail.com",
+		"address": "12-B",
+		"city": "Phoenix",
+		"state": "Arizona",
+		"orders": 1,
+		"pic": "images/male.png",
+		"zip": 345432,
+		"productDetails": [{
+			"product": "lock",
+			"Date": "24/10/2015",
+			"Quantity": "4",
+			"price": "$20",
+			"Total": "$80"
+		}]
+}]
+}]

@@ -1,0 +1,75 @@
+<form class="form-horizontal">
+    <div>
+        <h1><span class="glyphicon glyphicon-edit" aria-hidden="true"></span>Edit Customer</h1></div>
+        <h4>Name <a href="#" class="order-color">(View Orders)</a> </h4>
+    <div class="form-group">
+        <label for="first-name" class="col-sm-2 control-label">First Name:</label>
+        <div class="col-sm-10">
+            <input type="text" class="form-control add-customer" id="first-name" ng-model="customer.firstName" > 
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="last-name" class="col-sm-2 control-label">Last Name:</label>
+        <div class="col-sm-10">
+            <input type="text" class="form-control add-customer" id="last-name" ng-model="customer.lastName">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="optionsRadios1" class="col-sm-2 control-label">Gender:</label>
+        <div class="col-sm-10">
+            <label class="add-customer-label">
+                <input type="radio" name="optionsRadios" id="optionsRadios1" value="female" checked ng-model="customer.gender"> Female
+            </label>
+        </div>
+        <div class="col-sm-offset-2 col-sm-10">
+            <label class="add-customer-label">
+                <input type="radio" name="optionsRadios" id="optionsRadios2" value="male" ng-model="customer.gender"> Male
+            </label>
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="input-email" class="col-sm-2 control-label">Email:</label>
+        <div class="col-sm-10">
+            <input type="email" class="form-control add-customer" id="input-email" ng-model="customer.email">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="input-address" class="col-sm-2 control-label">Address:</label>
+        <div class="col-sm-10">
+            <input type="text" class="form-control add-customer" id="input-address" ng-model="customer.address">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="input-state" class="col-sm-2 control-label">State:</label>
+        <div class="col-sm-10">
+            <select class="form-control add-customer" id="input-state" ng-model="customer.state">
+                <option></option>
+                <option>Andra Pradesh</option>
+                <option>Telangana</option>
+                <option>Jharkhand</option>
+                <option>Bihar</option>
+                <option>Rajasthan</option>
+            </select>
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="input-city" class="col-sm-2 control-label">City:</label>
+        <div class="col-sm-10">
+            <input type="text" class="form-control add-customer" id="input-city" ng-model="customer.city">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="input-zip" class="col-sm-2 control-label">Zip:</label>
+        <div class="col-sm-10">
+            <input type="text" class="form-control add-customer" id="input-zip" ng-model="customer.zip">
+        </div>
+    </div>
+    <div class="form-group">
+    </div>
+    <div class="form-group">
+        <div class="col-sm-10">
+            <button type="button" class="btn btn-info" ng-click="editCustomer()">Update</button>
+            <button type="button" class="btn btn-danger" ng-click="deleteCustomer()">Delete</button>
+        </div>
+    </div>
+</form>

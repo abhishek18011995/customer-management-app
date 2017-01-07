@@ -1,0 +1,23 @@
+ <form class="form-horizontal">
+   <div><h1><span class="glyphicon glyphicon-lock" aria-hidden="true"></span>Login</h1></div>
+  <div class="form-group">
+    <label for="inputEmail3" class="col-sm-2 control-label" >Email</label>
+    <div class="col-sm-10">
+      <input type="email" class="form-control login" id="inputEmail3" placeholder="Email" ng-model="userDetails.email">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="inputPassword3" class="col-sm-2 control-label">Password</label>
+    <div class="col-sm-10">
+      <input type="password" class="form-control login" id="inputPassword3" placeholder="Password" ng-model="userDetails.password">
+    </div>
+  </div>
+  <div class="form-group">
+
+  </div>
+  <div class="form-group">
+    <div class="col-sm-offset-2 col-sm-10">
+      <button type="submit" class="btn btn-default" id="loginBtn" ng-click="login()">Login</button>
+    </div>
+  </div>
+</form>

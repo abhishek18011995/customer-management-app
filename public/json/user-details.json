@@ -1,0 +1,31 @@
+[
+    	{	"userName"	:"Mr. Kumar Abhishek",
+			"email": "abhi@gmail.com",
+			"password": "aaaaaa"
+		},
+		{
+			"userName"	:"Mr. Harshavardhana",
+			"email": "harsha@gmail.com",
+			"password": "bbbbbb"
+		},
+		{
+			"userName"	:"Mr. Shravan Kumar",
+			"email": "shravu@gmail.com",
+			"password": "cccccc"
+		},
+		{
+			"userName"	:"Mr. Avinash Bailore",
+			"email": "avi@gmail.com",
+			"password": "dddddd"
+		},
+		{
+			"userName"	:"Mr. Suraj Ghosh",
+			"email": "suraj@gmail.com",
+			"password": "eeeeee"
+		},
+		{
+			"userName"	:"Mr. Hola",
+			"email": "e@gmail.com",
+			"password": "eeeeee"
+		}
+	]

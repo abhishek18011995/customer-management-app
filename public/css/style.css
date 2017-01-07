@@ -1,0 +1,194 @@
+    * {
+        border: none;
+        box-shadow: none;
+        list-style-type: none;
+    }
+    
+    .clear {
+        clear: both;
+    }
+    /*a:hover{
+    text-decoration: none;
+}*/
+    
+    #order {
+        color: #fff;
+    }
+    
+    .navbar-default {
+        background-color: #0066ff;
+        background-image: none;
+    }
+    
+    .navbar-default .navbar-brand {
+        color: #fff;
+    }
+    
+    .navbar-default .navbar-nav>li>a {
+        color: #fff;
+    }
+    
+    .btn-default {
+        background-color: #0066ff;
+        background-image: none;
+        color: #fff;
+        border: none;
+        text-shadow: none;
+        box-shadow: none;
+    }
+    
+    .navbar-header>p {
+        font-size: 18px;
+        margin-top: 11px;
+        margin-left: 32px;
+        color: #fff;
+        margin-right: 14px;
+    }
+    
+    .pic {
+        float: left;
+        padding-left: 10px;
+    }
+    
+    .login {
+        border-left: 5px solid red;
+        width: 40%;
+    }
+    
+    .glyphicon-lock:before {
+        margin-right: 10px;
+        /*margin-left: 12px;*/
+    }
+    
+    .form-horizontal .control-label {
+        text-align: left;
+    }
+    
+    #loginBtn {
+        background-color: #66cccc;
+    }
+    
+    .white-btn {
+        color: #000;
+        background-color: #fff;
+        font-weight: bold;
+    }
+    
+    .filter-search {
+        float: right;
+        margin-right: 46px;
+        display: inline-flex;
+        line-height: 2.5;
+        font-weight: bold;
+    }
+    
+    .filter-search input {
+        margin-left: 6px;
+        margin-bottom: 9px;
+    }
+    
+    .customer-cardview {
+        clear: both;
+        padding-left: 15px;
+    }
+    
+    .customer-box {
+        /*clear: both;*/
+        display: inline-block;
+        margin: 15px 15px;
+        width: 20%;
+        border: 1px solid black;
+    }
+    
+    .customer-box-header {
+        /*border: 1px solid black;*/
+        width: 100%;
+        background-color: #0066ff;
+    }
+    
+    .customer-box-header button {
+        background-color: #0066ff;
+        color: #fff;
+    }
+    
+    .customer-box-header button:hover {
+        background-color: #0066ff;
+    }
+    
+    #remove-glyph {
+        float: right;
+        margin: 7px;
+        color: white;
+    }
+    
+    .customer-box-body img {
+        float: left;
+        margin-right: 15px;
+    }
+    
+    .order-color {
+        color: #80bed5;
+    }
+    
+    .customer-box-body>div {
+        margin-bottom: 17px;
+    }
+    /*list view*/
+    
+    .list-titlebar {
+        background-color: #0066ff;
+        color: white;
+    }
+    
+    .list-titlebar th {
+        width: 200px;
+    }
+    
+    .table>tbody>tr>td {
+        vertical-align: inherit;
+    }
+    
+    .table tbody tr:nth-child(odd) {
+        background-color: #ddd;
+        border-bottom: 2px solid #ccc;
+    }
+    
+    .add-customer {
+        border-left: 5px solid green;
+        width: 40%;
+        margin-left: 120px;
+    }
+    
+    .add-customer-label {
+        margin-left: 120px;
+    }
+    /*.table-bordered>thead>tr>td{
+        border: 1px solid #fff;
+}*/
+    
+    .table>tbody>tr>td,
+    .table>thead>tr>th {
+        border: 1px solid #ccc;
+    }
+    /*    .form-inline {
+        margin-bottom: 25px;
+    }*/
+    
+    .form-inline .filter-name-product {
+        width: 38%;
+        margin-bottom: 25px;
+    }
+    
+    .filter-name-product .filter-input {
+        width: 75%;
+    }
+    
+    .filter-product {
+        float: right;
+        margin-right: 17px;
+    }
+
+.order-table tbody tr:nth-child(odd) {
+    background-color: rgba(221, 221, 221, 0.2);
+    border-bottom: 1px solid rgba(204, 204, 204, 0.99);
+}
